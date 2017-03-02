@@ -44,5 +44,7 @@ def undecorated(o):
             undecd = undecorated(cell.cell_contents)
             if undecd:
                 return undecd
+            else:
+                return o
     else:
         return o
